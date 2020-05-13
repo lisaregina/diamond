@@ -1,7 +1,7 @@
 
-function diamond(letter){      
+function diamond(letter, bet){      
     
-    alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+   const alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 //     a = "A";
 //  if(letter === a){
@@ -9,18 +9,22 @@ function diamond(letter){
 //  }
 
 if(alpha.includes(letter)){
-    console.log(letter);
-};
-
-
-    // alpha.indexOf(end);
     
-    // const letter = alpha.map(
-    // alpha.slice(0, end +1)); //end+1, weil sonst der gegebene Buchstabe sonst nicht enthalten ist
+    end = alpha.indexOf(letter);
+    
+    let bet = [];
+    
+    bet = alpha.map(          //erstellt ein Array bet, dass alpha beinhaltet mit den geslicten Elementen
+                letter => alpha.slice(0, end + 1));      //end+1, weil sonst der gegebene Buchstabe sonst nicht enthalten ist
 
-//alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    console.log(letter);
+    console.log(bet);
+  };
+
+
 
 return letter;
+return bet;
 }
 
 

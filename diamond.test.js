@@ -11,9 +11,14 @@ describe("diamond", ()=>{
     //     expect(diamond("A")).toEqual("A")
     // })
 
-    it("should be the within array", ()=>{
-        console.log(diamond("B"));
-        expect(diamond("B")).toEqual("B")
+    it("should be within the array", ()=>{
+        console.log(diamond(letter = "B"));
+        expect(diamond(letter = "B")).toEqual("B")
+    })
+
+    it("should display a new array, containing the beginning of the alphabet till the letter", ()=>{
+        console.log(diamond(letter = "D"));
+        expect(diamond(bet = ["A", "B", "C", "D"])).toEqual(["A", "B", "C", "D"])
     })
 });
 
