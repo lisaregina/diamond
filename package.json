@@ -1,0 +1,23 @@
+{
+  "name": "diamond",
+  "version": "1.0.0",
+  "description": "Programm, dass das Alphabet in Form eines Diamanten ausgibt. Bis zum gegebenen Buchstaben.",
+  "main": "diamond.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisaregina/diamond.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisaregina/diamond/issues"
+  },
+  "homepage": "https://github.com/lisaregina/diamond#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
