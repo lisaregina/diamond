@@ -3,7 +3,7 @@ function diamond(letter){
     
    const alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-  // if(alpha.includes(letter)){
+  
       end = alpha.indexOf(letter);
       let bet = [];
       
@@ -13,7 +13,7 @@ function diamond(letter){
       
   let symbol = '-';
 
-  let demo = [];          //Array, zum Ausgeben des Diamantens
+  let demo = [];          //Array, zum Ausgeben des Diamanten
   
 
   Array.prototype.forEach.call(bet, elem =>{
@@ -21,33 +21,21 @@ function diamond(letter){
       demo.push(symbol);
     }
     demo.push(elem);
+    //hier die Symbole in der Mitte
+    for(let j =bet.indexOf[elem] > 1; j === end +1; j++){
+      demo.push(symbol);
+    }
+    demo.push(elem);
     for(let i= bet.indexOf[elem]; i<=end+1; i++){
       demo.push(symbol);
     }
-  })
-
-  // Array.prototype.forEach.call(bet, elem =>{
-  //   for(end; end <= 0; end - index[elem]){
-  //     demo.push(symbol);
-  //   }
-  //   demo.push(bet[elem]);
-  //   for(end; end <= 0; end - index[elem]){
-  //     demo.push(symbol);
-  //   }
-  // })
-            
-  
-      
+    demo.push('<br>');
+  })    
 
 
       console.log(letter);
       console.log(bet);
       console.log(demo);
-      
-      
-  // };
-
-  
     
   
 

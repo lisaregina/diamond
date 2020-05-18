@@ -28,8 +28,8 @@ describe("diamond", ()=>{
     })
 
     it("should display symbols and letter and symbols", ()=>{
-        console.log(diamond(letter = "D"));
-        expect(diamond(demo=[ '-', '-', '-', 'A','-', '-', '-', '-', '-', 'B', '-', '-', '-', 'C', '-', 'D'])).toEqual(demo=[ '-', '-', '-', 'A','-', '-', '-', '-', '-', 'B', '-', '-', '-', 'C', '-', 'D'])
+        console.log(diamond(letter = "C"));
+        expect(diamond(demo=[ '-', '-', 'A','-', '-', '-', 'B', '-', 'B', '-', 'C', '-', '-', '-', 'C'])).toEqual(demo=[ '-', '-', 'A','-', '-', '-', 'B', '-', 'B', '-', 'C', '-', '-', '-', 'C'])
     })
 
 });
