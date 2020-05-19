@@ -13,7 +13,14 @@ function diamond(letter){
    let symbol = '-';
    let result = [];          //Array, zum Ausgeben des Diamanten
  
- 
+ //alternative zu einfach nur Zeile 11, sodass der Array im Test aufrufbar ist
+  //    const tilGiven = (letter)=>{
+//     const end = alpha.indexOf(letter);
+//     const result = [];
+//        result.push(alpha.slice(0, end+1)); //fügt die Buchstaben von index 0 bis einschließlich index von letter (gegebenen Buchstaben)
+//        return result;
+//        console.log(result);
+//    } 
    Array.prototype.forEach.call(bet, elem =>{
       let currIndex = bet.indexOf(elem);
        for(i=currIndex; i>=end; i++){
