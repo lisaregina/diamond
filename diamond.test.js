@@ -20,3 +20,21 @@ describe("diamond", ()=>{
 //         expect(diamond("C")).toEqual(result=[ "-", "-", "A", "-", "B", "C"])
 //     })
 });
+
+//aus Kolloquium, zur Inspiration/Verständnis
+// const{diamond, edge} = require("./diamond2")
+
+// describe("diamond2", ()=>{
+//     it("should output A for A", ()=>{
+//         expect(diamond("A")).toEqual("A")
+//     })
+//     describe("edge", ()=>{
+//         it("should return A, B for B", ()=>{
+//             expect(edge("B")).toEqual(["A","B"])
+//         })
+//         it("should return -A\nB- for B", ()=>{
+//             expect(edge("B")).toEqual(["-A","B-"])
+//         })
+//     })
+
+// })
