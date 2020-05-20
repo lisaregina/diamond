@@ -16,7 +16,7 @@ function diamond(letter){
  
    Array.prototype.forEach.call(bet, elem =>{
       let currIndex = bet.indexOf(elem);
-       for(i=currIndex; i>=end; i++){
+       for(i=currIndex; i>=end+1; i++){
           result.push(symbol);
        }
        result.push(elem);
