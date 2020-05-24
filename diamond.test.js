@@ -1,22 +1,62 @@
-const {diamond} = require("./diamond");
+const {diamond, edge} = require("./diamond");
 describe("diamond", ()=>{
 
-    it("should pass the test", ()=>{
-        console.log("D");
-        expect("D").toEqual("D")
+    // it("should pass the test", ()=>{
+    //     console.log("D");
+    //     expect("D").toEqual("D")
+    // })
+
+    // it("should display easiest diamond, -A-", ()=>{
+    //     expect(diamond("A")).toEqual(['-', 'A', '-'])
+    // })
+
+    xit("should display -A- -B-B- -A- for B ", ()=>{
+        expect(diamond("B")).toEqual([ '-', 'A', '-', 'B', '-', 'B', '-', 'A', '-'])
+    })
+describe("edge", ()=>{
+
+    xit("should return -A, B- for B", ()=>{
+        expect(edge("B")).toEqual(["-A", "B-"])
     })
 
-    it("should be D for D", ()=>{
-        expect(diamond("D")).toEqual("D")
+    xit("should return --A, -B-, C-- for C", ()=>{
+        expect(edge("C")).toEqual(["--A", "-B-", "C--"])
     })
 
-    describe("diamond", ()=>{
-    it("should return all letters of alphabet till given letter", ()=>{
-        expect(diamond("B")).toEqual(bet = ["A", "B"])
+    xit("should return ---A, --B-, -C--, D--- for D", ()=>{
+        expect(edge("D")).toEqual(["---A", "--B-", "-C--", "D---"])
     })
+
+    xit("should return ---A---, --B-B--, -C---C-, D-----D for D", ()=>{
+        expect(edge("D")).toEqual([["---A---", "--B-B--", "-C---C-", "D-----D"]])
     })
-    
-//     it("should display - - A - B, ()=>{
-//         expect(diamond("C")).toEqual(result=[ "-", "-", "A", "-", "B", "C"])
+
+
+    fit("should return ---A---, --B-B--, -C---C-, D-----D, -C---, --B-, ---A for D", ()=>{
+        expect(edge("D")).toEqual([["---A---", "--B-B--", "-C---C-", "D-----D"], ["-C---C-", "--B-B--", "---A---"]])
+    })
+
+    it("should return --A-- -B-B- C---C -B-B- --A--", ()=>{
+        expect(edge("D")).toEqual([["--A--", "-B-B-", "C---C"], ["-B-B-", "--A--"]])
+    })
+})
+   
+})
+
+//aus Kolloquium, zur Inspiration/Verständnis
+// const{diamond, edge} = require("./diamond2")
+
+// describe("diamond2", ()=>{
+//     it("should output A for A", ()=>{
+//         expect(diamond("A")).toEqual("A")
 //     })
-});
+//     describe("edge", ()=>{
+//         it("should return A, B for B", ()=>{
+//             expect(edge("B")).toEqual(["A","B"])
+//         })
+//         it("should return -A\nB- for B", ()=>{
+//             expect(edge("B")).toEqual(["-A","B-"])
+//         })
+//     })
+
+// })
