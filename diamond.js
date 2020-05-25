@@ -2,7 +2,7 @@ function edge(input){
     const alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
    
     const delta = alpha.indexOf(input);         //index von den gegebenen buchstaben
-    var result = [];
+    
     const result1 = alpha.slice(0, delta+1)      //array, das alpha in a bis gegebenen buchstaben teilt, da kein ; da ist, kann durch .map neues hinzugefügt werden
 
             .map((char, index) => {             
@@ -36,7 +36,7 @@ function edge(input){
                     return line + alpha[index]
                 }
             })
-    result.push(result1);
+    
 
     const mirror = alpha.slice(0, delta)                        //delta soll ausgeschlossen werden
             .map((char, index) => {             
@@ -72,12 +72,12 @@ function edge(input){
 
             .reverse()                            //reihenfolge umkehren
                    
-    result.push(mirror);
+    result = result1.concat(mirror);
+    result.join("\n");
 
     console.log(result);
     
     return result;
 }
- module.exports = {//diamond : diamond,
-                    edge};
+ module.exports = {edge};
 

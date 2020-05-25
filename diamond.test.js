@@ -33,11 +33,11 @@ describe("edge", ()=>{
 
 
     fit("should return ---A---, --B-B--, -C---C-, D-----D, -C---, --B-, ---A for D", ()=>{
-        expect(edge("D")).toEqual([["---A---", "--B-B--", "-C---C-", "D-----D"], ["-C---C-", "--B-B--", "---A---"]])
+        expect(edge("D")).toEqual(["---A---", "--B-B--", "-C---C-", "D-----D", "-C---C-", "--B-B--", "---A---"])
     })
 
     it("should return --A-- -B-B- C---C -B-B- --A--", ()=>{
-        expect(edge("D")).toEqual([["--A--", "-B-B-", "C---C"], ["-B-B-", "--A--"]])
+        expect(edge("D")).toEqual(["--A--", "-B-B-", "C---C","-B-B-", "--A--"])
     })
 })
    
