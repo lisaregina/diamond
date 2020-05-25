@@ -37,7 +37,7 @@ describe("edge", ()=>{
     })
 
     it("should return --A-- -B-B- C---C -B-B- --A--", ()=>{
-        expect(edge("D")).toEqual(["--A--", "-B-B-", "C---C","-B-B-", "--A--"])
+        expect(edge("C")).toEqual(["--A--", "-B-B-", "C---C","-B-B-", "--A--"])
     })
 })
    

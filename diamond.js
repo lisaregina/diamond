@@ -73,11 +73,11 @@ function edge(input){
             .reverse()                            //reihenfolge umkehren
                    
     result = result1.concat(mirror);
-    result.join("\n");
+    const final = result.join("\n");
 
-    console.log(result);
+    console.log(final);
     
-    return result;
+    return final;
 }
  module.exports = {edge};
 
